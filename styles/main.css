@@ -28,6 +28,13 @@ h3,
 p {
     margin: 0;
     padding: .25em;
+    
+}
+
+p{
+    text-indent: 2em;
+    line-height: 1.5em;
+    padding: 1em;
 }
 
 a {
@@ -119,7 +126,7 @@ ul li ul:hover {
 #nav_menu ul {
     list-style: none;
     display: grid;
-    grid-template: auto / repeat(4, 1fr);
+    grid-template: auto / repeat(8, 1fr);
     align-content: center;
     margin: 0;
     padding: 0;
@@ -156,7 +163,10 @@ main {
         "sec1 sec1 img01 img01"
         "img02 img02 sec2 sec2"
         "sec3 sec3 img03 img03"
-        "img04 img04 sec4 sec4";
+        "img04 img04 sec4 sec4"
+        "sec5 sec5 img05 img05"
+        "img06 img06 sec6 sec6"
+        "sec7 sec7 sec7 sec7";
 }
 
 /* the styles for the section */
@@ -179,6 +189,15 @@ main {
 .sec4 {
     grid-area: sec4;
 }
+.sec5 {
+    grid-area: sec5;
+}
+.sec6 {
+    grid-area: sec6;
+}
+.sec7 {
+    grid-area: sec7;
+}
 
 .img01 {
     grid-area: img01;
@@ -194,6 +213,15 @@ main {
 
 .img04 {
     grid-area: img04;
+}
+.img05 {
+    grid-area: img05;
+}
+.img06 {
+    grid-area: img06;
+}
+.img07 {
+    grid-area: img07;
 }
 
 .paper {
@@ -231,7 +259,7 @@ section h2 {
 
 /* the styles for the footer */
 footer {
-    padding-top: 3em;
+    padding-top: 15em;
     grid-area: foot;
 }
 
@@ -239,6 +267,9 @@ footer p {
     font-size: .75em;
     text-align: right;
     margin-right: 2%;
+    padding: 1em;
+    background-color: #6497bf;
+
 }
 
 #mobile_menu {
@@ -333,7 +364,12 @@ footer p {
             "img03"
             "sec3"
             "img04"
-            "sec4";
+            "sec4"
+            "img05"
+            "sec5"
+            "img06"
+            "sec6"
+            "sec7";
     }
 
     section {
