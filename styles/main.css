@@ -4,7 +4,7 @@ body {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size: 100%;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1600px;
     height: auto;
     background-color: #9fcbee;
     margin: 15px auto;
@@ -43,7 +43,7 @@ a {
 
 a:link,
 a:visited {
-    color: #00008b;
+    color: white;
 }
 
 a:hover,
@@ -126,7 +126,7 @@ ul li ul:hover {
 #nav_menu ul {
     list-style: none;
     display: grid;
-    grid-template: auto / repeat(8, 1fr);
+    grid-template: auto / repeat(9, 1fr);
     align-content: center;
     margin: 0;
     padding: 0;
@@ -148,9 +148,9 @@ ul li ul:hover {
     text-decoration: none;
 }
 
-#nav_menu ul li a.current {
+/* #nav_menu ul li a.current {
     color: #00008b !important;
-}
+} */
 
 /* the styles for the main element */
 main {
@@ -165,7 +165,8 @@ main {
         "sec3 sec3 img03 img03"
         "img04 img04 sec4 sec4"
         "sec5 sec5 img05 img05"
-        "img06 img06 sec6 sec6"
+        "img08 img08 sec8 sec8"
+        "sec6 sec6 img06 img06"
         "sec7 sec7 sec7 sec7";
 }
 
@@ -199,6 +200,10 @@ main {
     grid-area: sec7;
 }
 
+.sec8 {
+    grid-area: sec8;
+}
+
 .img01 {
     grid-area: img01;
 }
@@ -222,6 +227,9 @@ main {
 }
 .img07 {
     grid-area: img07;
+}
+.img08 {
+    grid-area: img08;
 }
 
 .paper {
@@ -259,7 +267,7 @@ section h2 {
 
 /* the styles for the footer */
 footer {
-    padding-top: 15em;
+    padding-top: 20em;
     grid-area: foot;
 }
 
@@ -367,11 +375,15 @@ footer p {
             "sec4"
             "img05"
             "sec5"
+            "img08"
+            "sec8"
             "img06"
             "sec6"
             "sec7";
     }
-
+.sec7 {
+    margin-top: 1em;
+}
     section {
         width: 96%;
         margin: 0 2%;
